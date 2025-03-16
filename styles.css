@@ -590,7 +590,7 @@ header {
 /* Hero sekcja */
 .hero {
     height: 80vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('svg/IMG_0280.heic') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('svg/heoweb.jpg') no-repeat center center/cover;
     color: #fff;
     display: flex;
     align-items: center;
