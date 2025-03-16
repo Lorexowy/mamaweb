@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitką i Szydełkiem - Rękodzieło szydełkowe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Nagłówek z logo i menu nawigacyjnym -->
+    <header>
+        <div class="container header-container">
+            <!-- Lewa strona nawigacji -->
+            <div class="nav-section nav-left">
+                <a href="#social-feed" class="nav-item">
+                    <div class="nav-icon">
+                        <i class="fas fa-stream"></i>
+                    </div>
+                    <span>Social Media</span>
+                </a>
+                <a href="#gallery" class="nav-item">
+                    <div class="nav-icon">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <span>Galeria</span>
+                </a>
+            </div>
+            
+            <!-- Logo środkowe -->
+            <div class="logo-center">
+                <a href="#" class="logo-link">
+                    <img src="img/logomadampng.png" alt="Nitką i Szydełkiem - Logo" class="logo-svg">
+                </a>
+            </div>
+            
+            <!-- Prawa strona nawigacji -->
+            <div class="nav-section nav-right">
+                <a href="#products" class="nav-item">
+                    <div class="nav-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <span>Oferta</span>
+                </a>
+                <a href="#contact" class="nav-item">
+                    <div class="nav-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <span>Kontakt</span>
+                </a>
+            </div>
+            
+            <!-- Przycisk mobilnego menu -->
+            <div class="mobile-menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <!-- Mobilne menu (wyświetlane przy małym ekranie) -->
+            <div class="mobile-menu">
+                <a href="#social-feed" class="mobile-nav-item">
+                    <i class="fas fa-stream"></i>
+                    <span>Social Media</span>
+                </a>
+                <a href="#gallery" class="mobile-nav-item">
+                    <i class="fas fa-images"></i>
+                    <span>Galeria</span>
+                </a>
+                <a href="#products" class="mobile-nav-item">
+                    <i class="fas fa-tags"></i>
+                    <span>Oferta</span>
+                </a>
+                <a href="#contact" class="mobile-nav-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Kontakt</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero sekcja z obrazem -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>HANDMADE BY MADA M.</h1>
+            <h2>Nitką i Szydełkiem</h2>
+            <p>Unikalne projekty tworzone z miłością i pasją</p>
+            <a href="#contact" class="btn">Zamów swój projekt</a>
+        </div>
+        
+        <div class="floating-elements">
+            <div class="floating-element" data-speed="2" style="left: 15%; top: 20%">
+                <svg width="60" height="60" viewBox="0 0 60 60">
+                    <path d="M15,30 Q22,15 30,30 T45,30" stroke="#4682B4" stroke-width="2" fill="none" />
+                </svg>
+            </div>
+            <div class="floating-element" data-speed="1.5" style="right: 20%; top: 35%">
+                <svg width="40" height="40" viewBox="0 0 40 40">
+                    <circle cx="20" cy="20" r="10" fill="#B0C4DE" />
+                </svg>
+            </div>
+            <div class="floating-element" data-speed="3" style="left: 30%; bottom: 25%">
+                <svg width="35" height="35" viewBox="0 0 35 35">
+                    <path d="M5,20 L15,10 L25,20 L15,30 Z" fill="#87CEEB" />
+                </svg>
+            </div>
+        </div>
+    </section>
+    
+    <div class="wave-divider">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+    </div>
+    
+    <!-- Social Media Feed -->
+    <section id="social-feed" class="social-feed">
+        <div class="container">
+            <h2 class="section-title">Śledź moje najnowsze projekty</h2>
+            
+            <div class="social-intro">
+                <p>Witaj w moim kreatywnym świecie szydełkowania! Zajrzyj na moje profile społecznościowe, gdzie dzielę się najnowszymi projektami, inspiracjami i kulisami powstawania moich prac.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="#" class="social-link instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="social-feeds-container">
+                <!-- Facebook Feed -->
+                <div class="facebook-feed">
+                    <h3><i class="fab fa-facebook"></i> Najnowsze z Facebooka</h3>
+                    <div class="fb-container">
+                        <div id="fb-feed" class="fb-posts">
+                            <!-- Placeholder dla postów z Facebooka -->
+                            <div class="social-post">
+                                <div class="post-header">
+                                    <img src="/api/placeholder/50/50" alt="Logo" class="post-avatar">
+                                    <div class="post-info">
+                                        <h4>Nitką i Szydełkiem</h4>
+                                        <span class="post-date">wczoraj o 15:30</span>
+                                    </div>
+                                </div>
+                                <p class="post-content">Dzisiaj ukończyłam nowego misia dla Zosi! Wykonany z bawełnianej włóczki w pięknych pastelowych kolorach. Szydełkowy miś jest miękki, bezpieczny i idealny do przytulania 🧶💗</p>
+                                <img src="/api/placeholder/400/300" alt="Post z Facebooka" class="post-image">
+                                <div class="post-stats">
+                                    <span><i class="far fa-heart"></i> 24</span>
+                                    <span><i class="far fa-comment"></i> 5</span>
+                                    <span><i class="far fa-share-square"></i> 2</span>
+                                </div>
+                            </div>
+                            <div class="social-post">
+                                <div class="post-header">
+                                    <img src="/api/placeholder/50/50" alt="Logo" class="post-avatar">
+                                    <div class="post-info">
+                                        <h4>Nitką i Szydełkiem</h4>
+                                        <span class="post-date">3 dni temu</span>
+                                    </div>
+                                </div>
+                                <p class="post-content">Nowa kolekcja podkładek pod szklanki już dostępna! Wykonane z wysokiej jakości bawełnianego sznurka, dostępne w różnych kolorach 🌈</p>
+                                <img src="/api/placeholder/400/300" alt="Post z Facebooka" class="post-image">
+                                <div class="post-stats">
+                                    <span><i class="far fa-heart"></i> 31</span>
+                                    <span><i class="far fa-comment"></i> 8</span>
+                                    <span><i class="far fa-share-square"></i> 4</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Instagram Feed -->
+                <div class="instagram-feed">
+                    <h3><i class="fab fa-instagram"></i> Z Instagrama</h3>
+                    <div class="insta-container">
+                        <div id="insta-feed" class="insta-posts">
+                            <!-- Placeholder dla postów z Instagrama -->
+                            <div class="insta-post">
+                                <img src="/api/placeholder/300/300" alt="Instagram post 1" />
+                                <div class="insta-overlay">
+                                    <div class="insta-stats">
+                                        <span><i class="far fa-heart"></i> 42</span>
+                                        <span><i class="far fa-comment"></i> 7</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="insta-post">
+                                <img src="/api/placeholder/300/300" alt="Instagram post 2" />
+                                <div class="insta-overlay">
+                                    <div class="insta-stats">
+                                        <span><i class="far fa-heart"></i> 38</span>
+                                        <span><i class="far fa-comment"></i> 5</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="insta-post">
+                                <img src="/api/placeholder/300/300" alt="Instagram post 3" />
+                                <div class="insta-overlay">
+                                    <div class="insta-stats">
+                                        <span><i class="far fa-heart"></i> 56</span>
+                                        <span><i class="far fa-comment"></i> 11</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="wave-divider alt">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+    <!-- Galeria -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Moje prace</h2>
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">Wszystkie</button>
+                <button class="filter-btn" data-filter="toys">Zabawki</button>
+                <button class="filter-btn" data-filter="clothes">Ubrania</button>
+                <button class="filter-btn" data-filter="home">Dekoracje domowe</button>
+                <button class="filter-btn" data-filter="seasonal">Dekoracje sezonowe</button>
+                <button class="filter-btn" data-filter="accessories">Akcesoria</button>
+            </div>
+            <div class="gallery-container">
+                <!-- Zabawki -->
+                <div class="gallery-item toys">
+                    <img src="img/zabawki/IMG_0062.jpeg" alt="Trygrysek" />
+                    <div class="gallery-overlay">
+                        <h3>Trygrysek</h3>
+                        <p>Szydełkowa zabawka wykonana z bawełnianej włóczki</p>
+                    </div>
+                </div>
+                <div class="gallery-item toys">
+                    <img src="img/zabawki/IMG_0362.jpeg" alt="Lalka" />
+                    <div class="gallery-overlay">
+                        <h3>Lalka Anime</h3>
+                        <p>Szydełkowa zabawka wykonana z bawełnianej włóczki</p>
+                    </div>
+                </div>
+                <div class="gallery-item toys">
+                    <img src="img/zabawki/IMG_0690.jpeg" alt="Sąsiedzi" />
+                    <div class="gallery-overlay">
+                        <h3>Sąsiedzi</h3>
+                        <p>Szydełkowa zabawka wykonana z bawełnianej włóczki</p>
+                    </div>
+                </div>
+
+                <!-- Ubrania -->
+                <div class="gallery-item clothes">
+                    <img src="img/ubrania/IMG_0515.jpeg" alt="Sweter szydełkowy" />
+                    <div class="gallery-overlay">
+                        <h3>Sweter "Jesień"</h3>
+                        <p>Ciepły sweter z delikatnej włóczki</p>
+                    </div>
+                </div>
+                <div class="gallery-item clothes">
+                    <img src="img/ubrania/IMG_0708.jpeg" alt="Czapka szydełkowa" />
+                    <div class="gallery-overlay">
+                        <h3>Czapka "Nordic"</h3>
+                        <p>Zimowa czapka z pomponem</p>
+                    </div>
+                </div>
+                <div class="gallery-item clothes">
+                    <img src="img/ubrania/IMG_0499.jpeg" alt="Rękawiczki" />
+                    <div class="gallery-overlay">
+                        <h3>Rękawiczki</h3>
+                        <p>Wygodne rękawiczki wykonane z bawełnianego sznurka</p>
+                    </div>
+                </div>
+
+                <!-- Dekoracje domowe -->
+                <div class="gallery-item home">
+                    <img src="img/dekoracjedomowe/IMG_0172.jpeg" alt="Łapacz snów" />
+                    <div class="gallery-overlay">
+                        <h3>Łapacz snów "Pastele"</h3>
+                        <p>Delikatny łapacz snów w pastelowych kolorach</p>
+                    </div>
+                </div>
+                <div class="gallery-item home">
+                    <img src="img/dekoracjedomowe/IMG_0232.jpeg" alt="Podkładki pod kubki" />
+                    <div class="gallery-overlay">
+                        <h3>Podkładka pod kubek</h3>
+                        <p>Komplet podkładek w geometryczne wzory</p>
+                    </div>
+                </div>
+                <div class="gallery-item home">
+                    <img src="" alt="Serwetki" />
+                    <div class="gallery-overlay">
+                        <h3>Koszyk "Scandic"</h3>
+                        <p>Minimalistyczny koszyk w skandynawskim stylu</p>
+                    </div>
+                </div>
+
+                <!-- Dekoracje sezonowe -->
+                <div class="gallery-item seasonal">
+                    <img src="img/dekoracjesezonowe/IMG_1839 2.jpeg" alt="Ozdoby wielkanocne" />
+                    <div class="gallery-overlay">
+                        <h3>Wielkanocne jajka</h3>
+                        <p>Zestaw kolorowych pisanek szydełkowych</p>
+                    </div>
+                </div>
+                <div class="gallery-item seasonal">
+                    <img src="/api/placeholder/300/300" alt="Ozdoby bożonarodzeniowe" />
+                    <div class="gallery-overlay">
+                        <h3>Gwiazdki świąteczne</h3>
+                        <p>Eleganckie ozdoby na choinkę</p>
+                    </div>
+                </div>
+                <div class="gallery-item seasonal">
+                    <img src="/api/placeholder/300/300" alt="Mikołaj szydełkowy" />
+                    <div class="gallery-overlay">
+                        <h3>Mikołaj "Krasnaluch"</h3>
+                        <p>Dekoracyjny mikołaj w skandynawskim stylu</p>
+                    </div>
+                </div>
+
+                <!--Akcesoria-->
+                <div class="gallery-item accessories">
+                    <img src="img/akcesoria/IMG_1819.jpeg" alt="brelok" />
+                    <div class="gallery-overlay">
+                        <h3>Mikołaj "Krasnaluch"</h3>
+                        <p>Dekoracyjny mikołaj w skandynawskim stylu</p>
+                    </div>
+                </div>
+                <div class="gallery-item accessories">
+                    <img src="img/akcesoria/IMG_0223.jpeg" alt="bransoletki" />
+                    <div class="gallery-overlay">
+                        <h3>Bransoletki</h3>
+                        <p>Bransoletki - wykonywane ze skóry lub bawełny</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="wave-divider">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+    <!-- Oferta -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Moja oferta</h2>
+            <div class="products-container">
+                <div class="product-category">
+                    <div class="product-icon">
+                        <i class="fas fa-teddy-bear"></i>
+                    </div>
+                    <h3>Zabawki na zamówienie</h3>
+                    <p>Personalizowane maskotki i zabawki szydełkowe wykonane według Twojego pomysłu. Idealne na prezent dla najmłodszych.</p>
+                    <a href="#contact" class="btn btn-outline">Zamów</a>
+                </div>
+                
+                <div class="product-category">
+                    <div class="product-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Ubrania szydełkowe</h3>
+                    <p>Swetry, czapki, szaliki i inne elementy garderoby wykonane ręcznie z najwyższej jakości włóczek. Ciepłe, wygodne i oryginalne.</p>
+                    <a href="#contact" class="btn btn-outline">Zamów</a>
+                </div>
+                
+                <div class="product-category">
+                    <div class="product-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Dekoracje do domu</h3>
+                    <p>Łapacze snów, podkładki pod szklanki, kosze i inne dodatki, które nadadzą Twojemu wnętrzu przytulnego charakteru.</p>
+                    <a href="#contact" class="btn btn-outline">Zamów</a>
+                </div>
+                
+                <div class="product-category">
+                    <div class="product-icon">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <h3>Dekoracje sezonowe</h3>
+                    <p>Ozdoby świąteczne, wielkanocne i inne dekoracje sezonowe, które umilą każdy czas w roku i stworzą wyjątkowy klimat.</p>
+                    <a href="#contact" class="btn btn-outline">Zamów</a>
+                </div>
+            </div>
+            <div class="products-info">
+                <p>Każdy projekt jest wyjątkowy i tworzony na indywidualne zamówienie. Skontaktuj się ze mną, aby omówić szczegóły i uzyskać wycenę!</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Kontakt -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Kontakt</h2>
+            
+            <div class="contact-intro">
+                <p>Masz pytania? Chcesz złożyć zamówienie lub omówić szczegóły projektu? Skontaktuj się ze mną!</p>
+            </div>
+            
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>Szczegółowe zapytania i zamówienia</p>
+                    <a href="mailto:kontakt@nitkaiszydelkiem.pl" class="contact-link">kontakt@nitkaiszydelkiem.pl</a>
+                    <a href="mailto:kontakt@nitkaiszydelkiem.pl" class="btn contact-btn">
+                        <i class="fas fa-paper-plane"></i> Wyślij email
+                    </a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>Szybki kontakt i konsultacje</p>
+                    <a href="tel:+48123456789" class="contact-link">+48 502 931 660</a>
+                    <a href="https://wa.me/48123456789" class="btn contact-btn">
+                        <i class="fab fa-whatsapp"></i> Napisz na WhatsApp
+                    </a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-facebook-messenger"></i>
+                    </div>
+                    <h3>Messenger</h3>
+                    <p>Pytania i aktualności</p>
+                    <a href="https://m.me/nitkaiszydelkiem" class="contact-link">@nitkaiszydelkiem</a>
+                    <a href="https://m.me/nitkaiszydelkiem" class="btn contact-btn">
+                        <i class="fab fa-facebook-messenger"></i> Napisz na Messenger
+                    </a>
+                </div>
+            </div>
+            
+            <div class="contact-hours">
+                <h3>Godziny odpowiedzi</h3>
+                <p>Odpowiadam na wiadomości od poniedziałku do piątku w godzinach 9:00-17:00</p>
+                <p>Na zamówienia odpowiadam zwykle w ciągu 24 godzin</p>
+            </div>
+            
+            <div class="faq-teaser">
+                <h3>Najczęściej zadawane pytania</h3>
+                <div class="faq-items">
+                    <div class="faq-item">
+                        <h4>Ile trwa realizacja zamówienia?</h4>
+                        <p>Czas realizacji zależy od złożoności projektu i wynosi zazwyczaj od 3 do 14 dni roboczych.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Czy wykonuję projekty na zamówienie?</h4>
+                        <p>Tak, z przyjemnością podejmę się realizacji Twojego indywidualnego projektu.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Jakie formy płatności akceptuję?</h4>
+                        <p>Akceptuję przelewy bankowe oraz płatności przez BLIK.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Nitką i Szydełkiem</h3>
+                    <p>Rękodzieło szydełkowe z pasją</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Szybki dostęp</h4>
+                    <ul>
+                        <li><a href="#social-feed">Social Media</a></li>
+                        <li><a href="#gallery">Galeria</a></li>
+                        <li><a href="#products">Oferta</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Social Media</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nitką i Szydełkiem. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
