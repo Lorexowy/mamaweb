@@ -136,77 +136,24 @@
                 <div class="facebook-feed">
                     <h3><i class="fab fa-facebook"></i> Najnowsze z Facebooka</h3>
                     <div class="fb-container">
-                        <div id="fb-feed" class="fb-posts">
-                            <!-- Placeholder dla postów z Facebooka -->
-                            <div class="social-post">
-                                <div class="post-header">
-                                    <img src="/api/placeholder/50/50" alt="Logo" class="post-avatar">
-                                    <div class="post-info">
-                                        <h4>Nitką i Szydełkiem</h4>
-                                        <span class="post-date">wczoraj o 15:30</span>
-                                    </div>
-                                </div>
-                                <p class="post-content">Dzisiaj ukończyłam nowego misia dla Zosi! Wykonany z bawełnianej włóczki w pięknych pastelowych kolorach. Szydełkowy miś jest miękki, bezpieczny i idealny do przytulania 🧶💗</p>
-                                <img src="/api/placeholder/400/300" alt="Post z Facebooka" class="post-image">
-                                <div class="post-stats">
-                                    <span><i class="far fa-heart"></i> 24</span>
-                                    <span><i class="far fa-comment"></i> 5</span>
-                                    <span><i class="far fa-share-square"></i> 2</span>
-                                </div>
-                            </div>
-                            <div class="social-post">
-                                <div class="post-header">
-                                    <img src="/api/placeholder/50/50" alt="Logo" class="post-avatar">
-                                    <div class="post-info">
-                                        <h4>Nitką i Szydełkiem</h4>
-                                        <span class="post-date">3 dni temu</span>
-                                    </div>
-                                </div>
-                                <p class="post-content">Nowa kolekcja podkładek pod szklanki już dostępna! Wykonane z wysokiej jakości bawełnianego sznurka, dostępne w różnych kolorach 🌈</p>
-                                <img src="/api/placeholder/400/300" alt="Post z Facebooka" class="post-image">
-                                <div class="post-stats">
-                                    <span><i class="far fa-heart"></i> 31</span>
-                                    <span><i class="far fa-comment"></i> 8</span>
-                                    <span><i class="far fa-share-square"></i> 4</span>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- Facebook Page Plugin -->
+                        <div id="fb-root"></div>
+                        <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100094773292081" data-tabs="timeline" data-width="500" data-height="700" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/profile.php?id=100094773292081" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=100094773292081">Nitką i szydełkiem Handmade by MadaM</a></blockquote></div>
                     </div>
                 </div>
                 
                 <!-- Instagram Feed -->
-                <div class="instagram-feed">
-                    <h3><i class="fab fa-instagram"></i> Z Instagrama</h3>
-                    <div class="insta-container">
-                        <div id="insta-feed" class="insta-posts">
-                            <!-- Placeholder dla postów z Instagrama -->
-                            <div class="insta-post">
-                                <img src="/api/placeholder/300/300" alt="Instagram post 1" />
-                                <div class="insta-overlay">
-                                    <div class="insta-stats">
-                                        <span><i class="far fa-heart"></i> 42</span>
-                                        <span><i class="far fa-comment"></i> 7</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="insta-post">
-                                <img src="/api/placeholder/300/300" alt="Instagram post 2" />
-                                <div class="insta-overlay">
-                                    <div class="insta-stats">
-                                        <span><i class="far fa-heart"></i> 38</span>
-                                        <span><i class="far fa-comment"></i> 5</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="insta-post">
-                                <img src="/api/placeholder/300/300" alt="Instagram post 3" />
-                                <div class="insta-overlay">
-                                    <div class="insta-stats">
-                                        <span><i class="far fa-heart"></i> 56</span>
-                                        <span><i class="far fa-comment"></i> 11</span>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="instagram-feed">
+                        <h3><i class="fab fa-instagram"></i> Z Instagrama</h3>
+                        <div class="insta-container">
+                            <!-- LightWidget WIDGET -->
+                            <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+                            <iframe src="//lightwidget.com/widgets/4997823fa28a54a398bd2fb393409b13.html" 
+                                    scrolling="no" allowtransparency="true" class="lightwidget-widget" 
+                                    style="width:100%;border:0;overflow:hidden;"></iframe>
+                        </div>
+                    </div>
+            </div>
                         </div>
                     </div>
                 </div>
@@ -505,5 +452,8 @@
     </footer>
 
     <script src="script.js"></script>
+    <script async defer crossorigin="anonymous" 
+        src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v17.0" 
+        nonce="random_nonce"></script>
 </body>
 </html>
