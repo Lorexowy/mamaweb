@@ -748,6 +748,133 @@ header {
     gap: 5px;
 }
 
+/* Style dla statycznego gridu Instagram */
+.instagram-feed {
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.instagram-feed:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.instagram-feed h3 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+.instagram-feed h3 i {
+    color: #c13584;
+}
+
+/* Grid 3x3 */
+.insta-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 1.5rem;
+}
+
+/* Posty na Instagramie */
+.insta-post {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    aspect-ratio: 1/1;
+    border: 3px solid var(--primary-light);
+}
+
+.insta-post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.insta-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding-bottom: 10px;
+}
+
+.insta-post:hover .insta-overlay {
+    opacity: 1;
+}
+
+.insta-post:hover img {
+    transform: scale(1.08);
+}
+
+.insta-stats {
+    color: white;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.insta-stats span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.2rem;
+}
+
+/* Link do profilu Instagram */
+.instagram-link-container {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.instagram-profile-link {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.instagram-profile-link i {
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+.instagram-profile-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(220, 39, 67, 0.3);
+    color: white;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .insta-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .insta-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* Instagram post styling */
 .insta-posts {
     display: grid;
